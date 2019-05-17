@@ -1,0 +1,453 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Results"
+    android:background="#A0073B">
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/reportcard"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="20dp"
+        android:id="@+id/img_result"/>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="50dp"
+        android:text="Result:-"
+        android:textColor="#FFF"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="10dp"
+        android:textStyle="italic"
+        android:id="@+id/result_txt"
+        android:layout_below="@id/img_result"
+        />
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/result_txt"
+        android:background="#fff">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="horizontal"
+                android:weightSum="3"
+                android:id="@+id/linear_layout_result">
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:orientation="vertical">
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Subjects"
+                        android:textStyle="italic"
+                        android:textColor="#131111"
+                        android:textSize="35dp"
+                        android:layout_marginTop="20dp"
+                        android:layout_marginLeft="10dp"/>
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="English"
+                        android:textSize="25dp"
+                        android:textColor="#000"
+                        android:layout_marginTop="40dp"
+                        android:layout_marginLeft="10dp"
+                        />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Mathematics"
+                        android:textSize="25dp"
+                        android:textColor="#000"
+                        android:layout_marginTop="10dp"
+                        android:layout_marginLeft="10dp"
+                        />
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Punjabi"
+                        android:textSize="25dp"
+                        android:textColor="#000"
+                        android:layout_marginTop="10dp"
+                        android:layout_marginLeft="10dp"
+                        />
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Hindi"
+                        android:textSize="25dp"
+                        android:textColor="#000"
+                        android:layout_marginTop="10dp"
+                        android:layout_marginLeft="10dp"
+                        />
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="History"
+                        android:textSize="25dp"
+                        android:textColor="#000"
+                        android:layout_marginTop="10dp"
+                        android:layout_marginLeft="10dp"
+                        />
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Geography"
+                        android:textSize="25dp"
+                        android:textColor="#000"
+                        android:layout_marginTop="10dp"
+                        android:layout_marginLeft="10dp"
+                        />
+                  <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Computer"
+                    android:textSize="25dp"
+                    android:textColor="#000"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginLeft="10dp"
+                    />
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Physics"
+                        android:textSize="25dp"
+                        android:textColor="#000"
+                        android:layout_marginTop="10dp"
+                        android:layout_marginLeft="10dp"
+                        />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Chemistry"
+                        android:textSize="25dp"
+                        android:textColor="#000"
+                        android:layout_marginTop="10dp"
+                        android:layout_marginLeft="10dp"
+                        />
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Biology"
+                        android:textSize="25dp"
+                        android:textColor="#000"
+                        android:layout_marginTop="10dp"
+                        android:layout_marginLeft="10dp"
+                        />
+
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:orientation="vertical"
+                    >
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Marks"
+                        android:textStyle="italic"
+                        android:textColor="#131111"
+                        android:textSize="35dp"
+                        android:layout_marginTop="20dp"
+                        />
+                    <TextView
+                        android:layout_width="30dp"
+                        android:layout_height="30dp"
+                        android:text="-"
+                        android:textSize="20dp"
+                        android:textColor="#000"
+                        android:layout_marginTop="33dp"
+                        android:layout_marginLeft="40dp"
+                        android:id="@+id/markeng"
+                        />
+                    <TextView
+                        android:layout_width="30dp"
+                        android:layout_height="30dp"
+                        android:text="-"
+                        android:textSize="20dp"
+                        android:textColor="#000"
+                        android:layout_marginTop="20dp"
+                        android:layout_marginLeft="40dp"
+                        android:id="@+id/markmath"
+                        />
+
+                    <TextView
+                        android:layout_width="30dp"
+                        android:layout_height="30dp"
+                        android:text="-"
+                        android:textSize="20dp"
+                        android:textColor="#000"
+                        android:layout_marginTop="15dp"
+                        android:layout_marginLeft="40dp"
+                        android:id="@+id/markpunjabi"
+                        />
+                    <TextView
+                        android:layout_width="30dp"
+                        android:layout_height="30dp"
+                        android:text="-"
+                        android:textSize="20dp"
+                        android:textColor="#000"
+                        android:layout_marginTop="15dp"
+                        android:layout_marginLeft="40dp"
+                        android:id="@+id/markhindi"
+                        />
+
+                    <TextView
+                        android:layout_width="30dp"
+                        android:layout_height="30dp"
+                        android:text="-"
+                        android:textSize="20dp"
+                        android:textColor="#000"
+                        android:layout_marginTop="15dp"
+                        android:layout_marginLeft="40dp"
+                        android:id="@+id/markhistory"
+                        />
+
+                    <TextView
+                        android:layout_width="30dp"
+                        android:layout_height="30dp"
+                        android:text="-"
+                        android:textSize="20dp"
+                        android:textColor="#000"
+                        android:layout_marginTop="15dp"
+                        android:layout_marginLeft="40dp"
+                        android:id="@+id/markgeo"
+                        />
+
+                    <TextView
+                        android:layout_width="30dp"
+                        android:layout_height="30dp"
+                        android:text="-"
+                        android:textSize="20dp"
+                        android:textColor="#000"
+                        android:layout_marginTop="15dp"
+                        android:layout_marginLeft="40dp"
+                        android:id="@+id/markcomp"
+                        />
+                    <TextView
+                        android:layout_width="30dp"
+                        android:layout_height="30dp"
+                        android:text="-"
+                        android:textSize="20dp"
+                        android:textColor="#000"
+                        android:layout_marginTop="15dp"
+                        android:layout_marginLeft="40dp"
+                        android:id="@+id/markphysics"
+                        />
+                    <TextView
+                        android:layout_width="30dp"
+                        android:layout_height="30dp"
+                        android:text="-"
+                        android:textSize="20dp"
+                        android:textColor="#000"
+                        android:layout_marginTop="13dp"
+                        android:layout_marginLeft="40dp"
+                        android:id="@+id/markchem"
+                        />
+                    <TextView
+                        android:layout_width="30dp"
+                        android:layout_height="30dp"
+                        android:text="-"
+                        android:textSize="20dp"
+                        android:textColor="#000"
+                        android:layout_marginTop="13dp"
+                        android:layout_marginLeft="40dp"
+                        android:id="@+id/markbio"
+                        />
+
+
+
+
+                </LinearLayout>
+
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:orientation="vertical">
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Total"
+                        android:textStyle="italic"
+                        android:textColor="#131111"
+                        android:textSize="35dp"
+                        android:layout_marginTop="20dp"
+                        android:id="@+id/txt_view_total"
+                        />
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="100"
+                        android:textColor="#000"
+                        android:textSize="20dp"
+                        android:layout_marginTop="40dp"
+                        android:layout_marginLeft="20dp"/>
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="100"
+                        android:textColor="#000"
+                        android:textSize="20dp"
+                        android:layout_marginTop="20dp"
+                        android:layout_marginLeft="20dp"/>
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="100"
+                        android:textColor="#000"
+                        android:textSize="20dp"
+                        android:layout_marginTop="20dp"
+                        android:layout_marginLeft="20dp"/>
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="100"
+                        android:textColor="#000"
+                        android:textSize="20dp"
+                        android:layout_marginTop="15dp"
+                        android:layout_marginLeft="20dp"/>
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="100"
+                        android:textColor="#000"
+                        android:textSize="20dp"
+                        android:layout_marginTop="20dp"
+                        android:layout_marginLeft="20dp"/>
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="100"
+                        android:textColor="#000"
+                        android:textSize="20dp"
+                        android:layout_marginTop="15dp"
+                        android:layout_marginLeft="20dp"/>
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="100"
+                        android:textColor="#000"
+                        android:textSize="20dp"
+                        android:layout_marginTop="15dp"
+                        android:layout_marginLeft="20dp"/>
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="100"
+                        android:textColor="#000"
+                        android:textSize="20dp"
+                        android:layout_marginTop="15dp"
+                        android:layout_marginLeft="20dp"/>
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="100"
+                        android:textColor="#000"
+                        android:textSize="20dp"
+                        android:layout_marginTop="15dp"
+                        android:layout_marginLeft="20dp"/>
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="100"
+                        android:textColor="#000"
+                        android:textSize="20dp"
+                        android:layout_marginTop="15dp"
+                        android:layout_marginLeft="20dp"/>
+                </LinearLayout>
+
+
+            </LinearLayout>
+
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/linear_layout_result"
+                android:layout_marginTop="40dp"
+                android:text="Graph:-"
+                android:textSize="40dp"
+                android:textColor="#A70404"
+                android:layout_marginLeft="20dp"
+                android:id="@+id/graph_txt_view_result"/>
+
+            <com.github.mikephil.charting.charts.BarChart
+                android:layout_width="match_parent"
+                android:layout_height="500dp"
+                android:id="@+id/result_bar_chart"
+                android:layout_below="@id/graph_txt_view_result"
+                android:layout_marginTop="20dp"
+                android:layout_marginBottom="20dp">
+
+            </com.github.mikephil.charting.charts.BarChart>
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/result_bar_chart"
+                android:orientation="vertical"
+                android:gravity="center">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="FINAL RESULT"
+                    android:textStyle="bold"
+                    android:textSize="20dp"/>
+
+                <ImageView
+                    android:layout_width="150dp"
+                    android:layout_height="150dp"
+                    android:id="@+id/result_image"
+                    android:layout_marginTop="10dp"
+                    />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text=""
+                    android:textColor="#000"
+                    android:id="@+id/result_remark"
+                    />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text=""
+                    android:textColor="#000"
+                    android:id="@+id/percentage"/>
+
+            </LinearLayout>
+
+
+
+
+        </RelativeLayout>
+
+
+    </ScrollView>
+
+</RelativeLayout>

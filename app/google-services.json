@@ -1,0 +1,42 @@
+{
+  "project_info": {
+    "project_number": "763903541405",
+    "firebase_url": "https://student-analytics.firebaseio.com",
+    "project_id": "student-analytics",
+    "storage_bucket": "student-analytics.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:763903541405:android:d4e50e14fded7e17",
+        "android_client_info": {
+          "package_name": "com.example.studentanalytics"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "763903541405-m8nk6souegjfqhnab0okff81fgh6pb19.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDFRhCy6YUGb3cLHrUl_PMFYe8KXkG9pNk"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 1,
+          "other_platform_oauth_client": []
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

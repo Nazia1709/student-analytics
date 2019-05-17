@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".appinfo"
+    android:background="#fff">
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="60dp"
+                android:id="@+id/Linear_appinfo"
+                android:background="#A0073B"
+                android:padding="10dp"
+                android:orientation="horizontal">
+
+                <ImageView
+                    android:layout_width="50dp"
+                    android:layout_height="40dp"
+                    android:src="@drawable/leftarrow"
+                    android:layout_marginRight="20dp"
+                    android:onClick="go_back"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="APP INFO"
+                    android:textSize="30dp"
+                    android:fontFamily="cursive"
+                    android:textStyle="bold"
+                    android:textColor="#fff"
+                    android:layout_marginLeft="50dp"
+
+                    />
+
+            </LinearLayout>
+
+
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@id/Linear_appinfo"
+        android:textSize="25dp"
+        android:text="•	This app gives all the information about the performance of each and every student.
+
+
+Teacher can create his/her account by registering himself/herself by providing some basic information like name , email , mobile number and set password for his account which he/she will use later while signing in to his/her account .
+
+Once signed in now he/she can create attendance list and add results of the students depending upon the class assigned.
+
+Parents can log in by providing student name, respective class, student id, and password.
+
+Parents can see attendance list and reports of the students anytime, anywhere.
+
+Teachers can also add remarks.
+
+"
+        android:textColor="#A0073B"
+        android:layout_marginTop="20dp"
+        android:padding="15dp"/>
+
+
+        </RelativeLayout>
+
+    </ScrollView>
+</RelativeLayout>

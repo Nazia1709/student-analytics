@@ -1,0 +1,220 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".profiletchr"
+    android:background="#A0073B">
+
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Student Analytics"
+        android:textSize="40dp"
+        android:textColor="#fff"
+        android:textStyle="bold"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="10dp"
+        android:id="@+id/profile_txt"/>
+    <ImageView
+        android:layout_width="200dp"
+        android:layout_height="150dp"
+        android:src="@drawable/tchr"
+        android:layout_below="@+id/profile_txt"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="10dp"
+        android:id="@+id/img_profile"/>
+
+    <HorizontalScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@id/img_profile"
+        >
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginTop="20dp"
+        android:id="@+id/layout_1">
+
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/img_profile"
+        android:text="Name"
+        android:textSize="30dp"
+        android:textColor="#fff"
+        android:layout_marginTop="10dp"
+        android:layout_marginLeft="30dp"
+        />
+        <ImageView
+            android:layout_width="50dp"
+            android:layout_height="40dp"
+            android:src="@drawable/hyphen"
+            android:layout_marginTop="15dp"
+            android:layout_marginLeft="10dp"
+            />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Teacher"
+            android:textSize="30dp"
+            android:layout_marginTop="10dp"
+            android:textColor="#fff"
+            android:layout_marginLeft="10dp"
+            android:id="@+id/txt_name"
+
+            />
+
+
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/layout_1"
+        android:orientation="horizontal"
+        android:id="@+id/layout_2">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Class"
+            android:textSize="30dp"
+            android:textColor="#fff"
+            android:layout_marginTop="10dp"
+            android:layout_marginLeft="30dp"
+            />
+        <ImageView
+            android:layout_width="50dp"
+            android:layout_height="40dp"
+            android:src="@drawable/hyphen"
+            android:layout_marginTop="15dp"
+            android:layout_marginLeft="10dp"
+            />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="10"
+            android:textSize="30dp"
+            android:layout_marginTop="10dp"
+            android:textColor="#fff"
+            android:layout_marginLeft="30dp"
+            android:id="@+id/txt_class"/>
+
+
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/layout_2"
+        android:orientation="horizontal"
+        android:id="@+id/layout_3">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Highest Qualification"
+            android:textSize="30dp"
+            android:textColor="#fff"
+            android:layout_marginTop="10dp"
+            android:layout_marginLeft="30dp"
+            />
+        <ImageView
+            android:layout_width="50dp"
+            android:layout_height="40dp"
+            android:src="@drawable/hyphen"
+            android:layout_marginTop="15dp"
+            android:layout_marginLeft="10dp"
+            />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="MCA"
+            android:textColor="#fff"
+            android:textSize="30dp"
+            android:layout_marginLeft="10dp"
+            android:id="@+id/txt_qualification"/>
+
+
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/layout_3"
+        android:orientation="horizontal"
+        android:id="@+id/layout_4">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Contact no"
+            android:textSize="30dp"
+            android:textColor="#fff"
+            android:layout_marginTop="10dp"
+            android:layout_marginLeft="30dp"
+            />
+        <ImageView
+            android:layout_width="50dp"
+            android:layout_height="40dp"
+            android:src="@drawable/hyphen"
+            android:layout_marginTop="15dp"
+            android:layout_marginLeft="10dp"
+            />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="1234567890"
+            android:textSize="30dp"
+            android:layout_marginTop="10dp"
+            android:textColor="#fff"
+            android:layout_marginLeft="10dp"
+            android:id="@+id/txt_contact"/>
+
+
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/layout_4"
+        android:orientation="horizontal"
+        android:id="@+id/layout_5">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Email id"
+            android:textSize="30dp"
+            android:textColor="#fff"
+            android:layout_marginTop="10dp"
+            android:layout_marginLeft="30dp"
+           />
+        <ImageView
+            android:layout_width="50dp"
+            android:layout_height="40dp"
+            android:src="@drawable/hyphen"
+            android:layout_marginTop="15dp"
+            android:layout_marginLeft="10dp"
+            />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Tchr@gmail.com"
+            android:textSize="30dp"
+            android:layout_marginTop="10dp"
+            android:textColor="#fff"
+            android:layout_marginLeft="10dp"
+            android:id="@+id/txt_emailid"/>
+
+
+
+    </LinearLayout>
+        </RelativeLayout>
+    </HorizontalScrollView>
+
+</RelativeLayout>
+
+

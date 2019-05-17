@@ -1,0 +1,320 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:background="#000">
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="A1"
+        android:textSize="40dp"
+        android:layout_margin="20dp"
+        android:id="@+id/marks_txt_A1"
+        android:textColor="#fff"/>
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="#fff"
+        android:layout_below="@id/sub_txt_marks"
+        android:id="@+id/View_1"/>
+    <View
+        android:layout_width="1dp"
+        android:layout_height="match_parent"
+        android:background="#fff"
+        android:layout_toRightOf="@id/sub_txt_marks"
+        android:layout_marginLeft="60dp"
+        android:layout_below="@+id/View_1"
+        android:id="@+id/View_2"/>
+<TextView
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:text="Subject"
+    android:textColor="#099C83"
+    android:layout_below="@+id/marks_txt_A1"
+    android:textSize="30dp"
+    android:layout_margin="20dp"
+    android:id="@+id/sub_txt_marks"/>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_toRightOf="@+id/sub_txt_marks"
+        android:textColor="#099C83"
+        android:textSize="30dp"
+        android:text="Marks"
+        android:layout_marginLeft="80dp"
+        android:layout_marginTop="115dp"
+        android:id="@+id/txt_marks_recycler"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="English"
+        android:textSize="30dp"
+        android:textColor="#fff"
+        android:layout_below="@id/sub_txt_marks"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="30dp"
+        android:id="@+id/text_english_marks"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Mathematics"
+        android:textSize="30dp"
+        android:textColor="#fff"
+        android:layout_below="@id/text_english_marks"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="10dp"
+        android:id="@+id/text_maths_marks"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Punjabi"
+        android:textSize="30dp"
+        android:textColor="#fff"
+        android:layout_below="@id/text_maths_marks"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="10dp"
+        android:id="@+id/text_punj_marks"/>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Hindi"
+        android:textSize="30dp"
+        android:textColor="#fff"
+        android:layout_below="@id/text_punj_marks"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="10dp"
+        android:id="@+id/text_hindi_marks"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Computer"
+        android:textSize="30dp"
+        android:textColor="#fff"
+        android:layout_below="@id/text_hindi_marks"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="10dp"
+        android:id="@+id/text_comp_marks"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="History"
+        android:textSize="30dp"
+        android:textColor="#fff"
+        android:layout_below="@id/text_comp_marks"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="10dp"
+        android:id="@+id/text_history_marks"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Geography"
+        android:textSize="30dp"
+        android:textColor="#fff"
+        android:layout_below="@id/text_history_marks"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="10dp"
+        android:id="@+id/text_geo_marks"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Physics"
+        android:textSize="30dp"
+        android:textColor="#fff"
+        android:layout_below="@id/text_geo_marks"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="10dp"
+        android:id="@+id/text_phy_marks"/>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Chemistry"
+        android:textSize="30dp"
+        android:textColor="#fff"
+        android:layout_below="@id/text_phy_marks"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="10dp"
+        android:id="@+id/text_chem_marks"/>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Biology"
+        android:textSize="30dp"
+        android:textColor="#fff"
+        android:layout_below="@id/text_chem_marks"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="10dp"
+        android:id="@+id/text_bio_marks"/>
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_below="@id/text_bio_marks"
+        android:background="#fff"
+        android:layout_alignParentBottom="true"/>
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="30dp"
+        android:layout_below="@id/txt_marks_recycler"
+        android:hint="Add Marks"
+        android:textColorHint="#fff"
+        android:textColor="#fff"
+        android:textSize="15dp"
+        android:layout_alignParentRight="true"
+        android:layout_marginTop="50dp"
+        android:layout_marginRight="40dp"
+        android:padding="3dp"
+        android:backgroundTint="#fff"
+        android:id="@+id/english_et" />
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="30dp"
+        android:layout_below="@id/english_et"
+        android:hint="Add Marks"
+        android:textColorHint="#fff"
+        android:textColor="#fff"
+        android:textSize="15dp"
+        android:layout_alignParentRight="true"
+        android:layout_marginTop="25dp"
+        android:layout_marginRight="40dp"
+        android:padding="3dp"
+        android:backgroundTint="#fff"
+        android:id="@+id/maths_et" />
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="30dp"
+        android:layout_below="@id/maths_et"
+        android:hint="Add Marks"
+        android:textColorHint="#fff"
+        android:textColor="#fff"
+        android:textSize="15dp"
+        android:layout_alignParentRight="true"
+        android:layout_marginTop="25dp"
+        android:layout_marginRight="40dp"
+        android:padding="3dp"
+        android:id="@+id/punjabi_et"
+        android:backgroundTint="#fff"/>
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="30dp"
+        android:layout_below="@id/punjabi_et"
+        android:hint="Add Marks"
+        android:textColorHint="#fff"
+        android:textColor="#fff"
+        android:textSize="15dp"
+        android:layout_alignParentRight="true"
+        android:layout_marginTop="20dp"
+        android:layout_marginRight="40dp"
+        android:padding="3dp"
+        android:backgroundTint="#fff"
+        android:id="@+id/hindi_et" />
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="30dp"
+        android:layout_below="@id/hindi_et"
+        android:hint="Add Marks"
+        android:textColorHint="#fff"
+        android:textColor="#fff"
+        android:textSize="15dp"
+        android:layout_alignParentRight="true"
+        android:layout_marginTop="20dp"
+        android:layout_marginRight="40dp"
+        android:padding="3dp"
+        android:backgroundTint="#fff"
+        android:id="@+id/comp_et" />
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="30dp"
+        android:layout_below="@id/comp_et"
+        android:hint="Add Marks"
+        android:textColorHint="#fff"
+        android:textColor="#fff"
+        android:textSize="15dp"
+        android:layout_alignParentRight="true"
+        android:layout_marginTop="20dp"
+        android:layout_marginRight="40dp"
+        android:padding="3dp"
+        android:backgroundTint="#fff"
+        android:id="@+id/history_et" />
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="30dp"
+        android:layout_below="@id/history_et"
+        android:hint="Add Marks"
+        android:textColorHint="#fff"
+        android:textColor="#fff"
+        android:textSize="15dp"
+        android:layout_alignParentRight="true"
+        android:layout_marginTop="20dp"
+        android:layout_marginRight="40dp"
+        android:padding="3dp"
+        android:backgroundTint="#fff"
+        android:id="@+id/geo_et" />
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="30dp"
+        android:layout_below="@id/geo_et"
+        android:hint="Add Marks"
+        android:textColorHint="#fff"
+        android:textColor="#fff"
+        android:textSize="15dp"
+        android:layout_alignParentRight="true"
+        android:layout_marginTop="20dp"
+        android:layout_marginRight="40dp"
+        android:padding="3dp"
+        android:backgroundTint="#fff"
+        android:id="@+id/physics_et" />
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="30dp"
+        android:layout_below="@id/physics_et"
+        android:hint="Add Marks"
+        android:textColorHint="#fff"
+        android:textColor="#fff"
+        android:textSize="15dp"
+        android:layout_alignParentRight="true"
+        android:layout_marginTop="20dp"
+        android:layout_marginRight="40dp"
+        android:padding="3dp"
+        android:backgroundTint="#fff"
+        android:id="@+id/chem_et" />
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="30dp"
+        android:layout_below="@id/chem_et"
+        android:hint="Add Marks"
+        android:textColorHint="#fff"
+        android:textColor="#fff"
+        android:textSize="15dp"
+        android:layout_alignParentRight="true"
+        android:layout_marginTop="20dp"
+        android:layout_marginRight="40dp"
+        android:padding="3dp"
+        android:backgroundTint="#fff"
+        android:id="@+id/bio_et" />
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/add"
+        android:layout_alignParentBottom="true"
+       android:layout_centerHorizontal="true"
+        android:id="@+id/add_image_view"
+        />
+
+
+
+
+
+
+
+</RelativeLayout>

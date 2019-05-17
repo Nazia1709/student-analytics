@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity3"
+    android:orientation="vertical"
+    android:background="@drawable/background_layout">
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Student Analytics"
+        android:textSize="40dp"
+        android:textColor="#fff"
+        android:textStyle="bold"
+        android:layout_centerHorizontal="true"
+        android:id="@+id/txt_viewparent"
+        android:layout_marginTop="10dp"/>
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="3dp"
+        android:layout_marginTop="5dp"
+        android:background="#fff"
+        android:layout_below="@id/txt_viewparent"/>
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Name of student"
+        android:textColorHint="#000"
+        android:background="@drawable/bttn_backgrounparent"
+        android:textSize="20dp"
+        android:textColor="#000"
+        android:padding="10dp"
+        android:layout_marginTop="100dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:layout_below="@+id/txt_viewparent"
+        android:id="@+id/et_1"
+        android:imeOptions="actionNext"
+        />
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Class"
+        android:textColorHint="#000"
+        android:background="@drawable/bttn_backgrounparent"
+        android:textSize="20dp"
+        android:textColor="#000"
+        android:padding="10dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:layout_marginTop="20dp"
+        android:layout_below="@+id/et_1"
+        android:id="@+id/et_2"
+        android:imeOptions="actionNext"/>
+        <EditText
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:hint="Student id"
+    android:textColorHint="#000"
+    android:background="@drawable/bttn_backgrounparent"
+    android:textSize="20dp"
+            android:textColor="#000"
+    android:padding="10dp"
+    android:layout_marginLeft="20dp"
+    android:layout_marginRight="20dp"
+    android:layout_marginTop="20dp"
+            android:layout_below="@+id/et_2"
+            android:id="@+id/et_3"
+            android:imeOptions="actionDone"
+    />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/et_3"
+        android:layout_centerHorizontal="true"
+        android:text="Log In"
+        android:textColor="#fff"
+        android:textSize="20dp"
+        android:padding="20dp"
+        android:background="@drawable/login_background"
+        android:layout_marginTop="20dp"
+        android:onClick="move_next"
+        android:id="@+id/bttn"/>
+    <ProgressBar
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/bttn"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="20dp"
+        android:visibility="invisible"
+        android:id="@+id/progress_bar"/>
+
+
+
+
+</RelativeLayout>

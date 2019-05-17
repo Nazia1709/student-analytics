@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity2"
+    >
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:src="@drawable/schoolpexel"
+        android:scaleType="centerCrop"/>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="80dp"
+        android:background="#A0073B"
+        android:gravity="center">
+
+<TextView
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:text="Student Analytics"
+    android:textSize="40dp"
+    android:textColor="#fff"
+    android:layout_marginTop="3dp"
+    android:textStyle="bold"/>
+    </LinearLayout>
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerVertical="true"
+        android:id="@+id/tchr_bttn"
+        android:text="TEACHER"
+        android:textSize="30dp"
+        android:background="@drawable/bttn_background"
+        android:textColor="#fff"
+        android:padding="15dp"
+        android:layout_marginLeft="15dp"
+        android:onClick="move_login1"
+
+        />
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_toRightOf="@+id/tchr_bttn"
+        android:layout_centerVertical="true"
+        android:id="@+id/parent_bttn"
+        android:text="PARENT"
+        android:textSize="30dp"
+        android:background="@drawable/bttn_background"
+        android:textColor="#fff"
+        android:padding="15dp"
+        android:layout_marginLeft="35dp"
+        android:onClick="move_login"/>
+</RelativeLayout>

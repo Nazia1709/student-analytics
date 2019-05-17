@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".addclass"
+    android:background="@drawable/background_layout">
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Student Analytics"
+        android:textSize="40dp"
+        android:textColor="#fff"
+        android:textStyle="bold"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="10dp"
+        android:id="@+id/txt_cls"/>
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="3dp"
+        android:background="#fff"
+        android:layout_below="@id/txt_cls"
+        android:layout_marginTop="5dp"/>
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Name of teacher"
+        android:textColorHint="#000"
+        android:background="@drawable/bttn_backgrounparent"
+        android:textSize="20dp"
+        android:textColor="#000"
+        android:padding="10dp"
+        android:layout_marginTop="100dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:layout_below="@+id/txt_cls"
+        android:id="@+id/edit_txtname"
+        android:imeOptions="actionNext"
+
+        />
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Email id"
+        android:textColorHint="#000"
+        android:background="@drawable/bttn_backgrounparent"
+        android:textSize="20dp"
+        android:textColor="#000"
+        android:padding="10dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:layout_below="@+id/edit_txtname"
+        android:id="@+id/edit_txtemail"
+        android:imeOptions="actionNext"
+        />
+    <EditText
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:hint="Add class"
+    android:textColorHint="#000"
+    android:background="@drawable/bttn_backgrounparent"
+    android:textSize="20dp"
+        android:textColor="#000"
+    android:padding="10dp"
+    android:layout_marginTop="10dp"
+    android:layout_marginLeft="20dp"
+    android:layout_marginRight="20dp"
+    android:layout_below="@+id/edit_txtemail"
+    android:id="@+id/edit_txtclass"
+    android:imeOptions="actionNext"
+    />
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Phone no "
+        android:textColorHint="#000"
+        android:background="@drawable/bttn_backgrounparent"
+        android:textSize="20dp"
+        android:textColor="#000"
+        android:padding="10dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:layout_below="@+id/edit_txtclass"
+        android:id="@+id/edit_txtphone"
+        android:imeOptions="actionDone"
+        />
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/edit_txtphone"
+        android:layout_marginTop="30dp"
+        android:text="Submit"
+        android:textSize="20dp"
+        android:padding="20dp"
+        android:background="@drawable/login_background"
+        android:textColor="#fff"
+        android:layout_centerHorizontal="true"
+        android:onClick="submit_addclass"
+        />
+
+
+</RelativeLayout>

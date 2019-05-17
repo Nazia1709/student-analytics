@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".selectclass"
+    android:background="#A0073B"
+    android:gravity="center_horizontal">
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Select Class"
+        android:textSize="40dp"
+        android:layout_marginTop="50dp"
+        android:textColor="#FFF"
+        android:id="@+id/txt_selectcls"/>
+
+    <android.support.v7.widget.AppCompatSpinner
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/spin"
+        android:layout_marginTop="40dp"
+        android:layout_below="@+id/txt_selectcls"
+        android:layout_marginLeft="80dp"
+        />
+
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="50dp"
+        android:text="NEXT"
+        android:textSize="40dp"
+        android:padding="10dp"
+        android:background="@drawable/bttn_backgrounparent"
+        android:textColor="#A0073B"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="5dp"
+        android:onClick="move_to_attendance"
+        />
+
+</RelativeLayout>

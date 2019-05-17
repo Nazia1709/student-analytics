@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity"
+    >
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:src="@drawable/pexelshome"
+        android:scaleType="fitXY"/>
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="#00000000"/>
+
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Student"
+        android:textColor="#fff"
+        android:textSize="70dp"
+        android:textStyle="bold"
+        android:layout_centerInParent="true"
+        android:id="@+id/std_id"
+        android:fontFamily="cursive"
+
+        />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Analytics"
+        android:textColor="#fff"
+        android:textSize="70dp"
+        android:textStyle="bold"
+        android:fontFamily="cursive"
+        android:layout_below="@+id/std_id"
+        android:layout_centerHorizontal="true"/>
+
+
+</RelativeLayout>

@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="#000">
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="#fff"
+        android:text="A1"
+        android:textSize="40dp"
+        android:layout_margin="20dp"
+        android:id="@+id/A1_text"
+        />
+
+    <RadioGroup
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:id="@+id/attendence_radio_group">
+        <RadioButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="P"
+            android:layout_marginLeft="20dp"
+            android:textColor="#025508"
+            android:textSize="30dp"
+            android:textColorHighlight="#000"
+            android:layout_marginBottom="20dp"
+            android:id="@+id/radio_present"
+            />
+        <RadioButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="A"
+            android:layout_marginLeft="20dp"
+            android:textColor="#9E0808"
+            android:textSize="30dp"
+            android:id="@+id/radio_absent"
+            />
+        <RadioButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="L"
+            android:layout_marginLeft="20dp"
+            android:textColor="#142CBD"
+            android:textSize="30dp"
+            android:id="@+id/radio_leave"
+            />
+    </RadioGroup>
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="#fff"/>
+
+
+</LinearLayout>

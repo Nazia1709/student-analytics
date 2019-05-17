@@ -1,0 +1,406 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v4.widget.DrawerLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:id="@+id/drawer_layout"
+    >
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="#000">
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="#A0073B"
+            android:id="@+id/relative_drawer">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="HOME"
+            android:textColor="#fff"
+            android:textSize="35dp"
+            android:textStyle="bold"
+            android:layout_marginTop="15dp"
+            android:layout_centerHorizontal="true"
+            android:id="@+id/txt_drawer"/>
+
+            <ImageView
+                android:id="@+id/img_menu"
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:layout_marginLeft="10dp"
+                android:layout_marginTop="15dp"
+                android:onClick="swipe_left"
+                android:src="@drawable/menu" />
+        </RelativeLayout>
+
+        <ViewFlipper
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/relative_drawer"
+            android:layout_marginTop="3dp"
+            android:layout_marginBottom="5dp"
+            android:autoStart="true"
+            android:id="@+id/view_flipper">
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="250dp"
+                android:scaleType="centerCrop"
+                android:src="@drawable/tchrstudents"
+                />
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="250dp"
+                android:scaleType="centerCrop"
+                android:src="@drawable/library"
+                />
+            <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="250dp"
+            android:scaleType="centerCrop"
+            android:src="@drawable/girlsstudying"
+            />
+            <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="250dp"
+            android:scaleType="centerCrop"
+            android:src="@drawable/pexelskids"
+            />
+            <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="250dp"
+            android:scaleType="centerCrop"
+            android:src="@drawable/teachpexel"
+            />
+
+
+        </ViewFlipper>
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_below="@id/view_flipper">
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/view_flipper"
+            >
+
+            <LinearLayout
+                android:id="@+id/linear1_drawer"
+                android:layout_width="180dp"
+                android:layout_height="180dp"
+                android:layout_marginLeft="1dp"
+                android:layout_marginTop="5dp"
+                android:background="@drawable/drawer_bttn"
+
+                />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Add Class"
+                android:textColor="#fff"
+                android:textSize="30dp"
+                android:layout_marginTop="68dp"
+                android:padding="5dp"
+                android:layout_marginLeft="18dp"
+
+                />
+            <LinearLayout
+                android:layout_width="180dp"
+                android:layout_height="180dp"
+                android:background="@drawable/drawer_bttn"
+                android:layout_marginTop="5dp"
+                android:layout_marginLeft="1dp"
+                android:layout_toRightOf="@+id/linear1_drawer"
+                android:id="@+id/linear2_drawer"
+                />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Add Student"
+                android:layout_toRightOf="@id/linear1_drawer"
+                android:textColor="#fff"
+                android:textSize="30dp"
+                android:layout_marginTop="72dp"
+                android:layout_marginLeft="8dp"
+                />
+            <LinearLayout
+                android:layout_width="180dp"
+                android:layout_height="180dp"
+                android:background="@drawable/drawer_bttn"
+                android:layout_marginTop="5dp"
+                android:layout_marginLeft="1dp"
+                android:layout_below="@id/linear1_drawer"
+                android:id="@+id/linear3_drawer"
+                />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Attendance"
+                android:textSize="30dp"
+                android:textColor="#fff"
+                android:layout_below="@id/linear1_drawer"
+                android:layout_marginTop="58dp"
+                android:layout_marginLeft="15dp"
+                android:id="@+id/attndnc_drawer"/>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="List"
+                android:textSize="30dp"
+                android:textColor="#fff"
+                android:layout_below="@id/attndnc_drawer"
+                android:layout_marginLeft="68dp"
+                android:id="@+id/list_drawer"/>
+            <LinearLayout
+                android:layout_width="180dp"
+                android:layout_height="180dp"
+                android:background="@drawable/drawer_bttn"
+                android:layout_marginTop="190dp"
+                android:layout_marginLeft="1dp"
+                android:layout_toRightOf="@+id/linear3_drawer"
+                android:id="@+id/linear4_drawer"
+                />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Marks"
+                android:layout_below="@id/linear2_drawer"
+                android:textColor="#fff"
+                android:textSize="30dp"
+                android:layout_marginTop="70dp"
+                android:layout_marginLeft="230dp"
+                />
+
+
+
+
+
+
+        </RelativeLayout>
+
+
+        </ScrollView>
+
+    </RelativeLayout>
+
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:layout_gravity="start"
+        android:background="#A0073B">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Home"
+            android:textSize="25dp"
+            android:textColor="#fff"
+            android:layout_marginTop="30dp"
+            android:layout_marginLeft="20dp"
+            android:onClick="open_home"
+            />
+            <ImageView
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:layout_marginLeft="155dp"
+                android:layout_marginTop="32dp"
+                android:src="@drawable/home_drawer"/>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Profile"
+            android:textSize="25dp"
+            android:textColor="#fff"
+            android:layout_marginLeft="20dp"
+            android:layout_marginTop="20dp"
+            android:onClick="open_profile"
+            />
+            <ImageView
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:layout_marginLeft="150dp"
+                android:layout_marginTop="22dp"
+                android:src="@drawable/profile_drawer"/>
+
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+        <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Add Class"
+        android:textSize="25dp"
+        android:textColor="#fff"
+        android:layout_marginTop="20dp"
+            android:layout_marginLeft="20dp"
+            android:onClick="open_addclass"
+        />
+            <ImageView
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:layout_marginLeft="110dp"
+                android:layout_marginTop="22dp"
+                android:src="@drawable/addclass_drawer"/>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+        <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Add Student"
+        android:textSize="25dp"
+        android:textColor="#fff"
+        android:layout_marginTop="20dp"
+            android:layout_marginLeft="20dp"
+            android:onClick="open_addstud"
+        />
+            <ImageView
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:layout_marginLeft="80dp"
+                android:layout_marginTop="22dp"
+                android:src="@drawable/addstud_drawer"/>
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+        <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Attendance List"
+        android:textSize="25dp"
+        android:textColor="#fff"
+        android:layout_marginLeft="20dp"
+            android:layout_marginTop="20dp"
+            android:onClick="open_recyclerattendance"
+        />
+            <ImageView
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:layout_marginLeft="45dp"
+                android:layout_marginTop="22dp"
+                android:src="@drawable/conference"/>
+        </LinearLayout>
+<LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="horizontal">
+        <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Marks"
+        android:textSize="25dp"
+        android:textColor="#fff"
+        android:layout_marginLeft="20dp"
+            android:layout_marginTop="20dp"
+            android:onClick="open_markslist"
+        />
+    <ImageView
+        android:layout_width="30dp"
+        android:layout_height="30dp"
+        android:layout_marginLeft="150dp"
+        android:layout_marginTop="22dp"
+        android:src="@drawable/amarks"/>
+</LinearLayout>
+<LinearLayout
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:orientation="horizontal">
+        <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Add Remarks"
+        android:textSize="25dp"
+        android:textColor="#fff"
+       android:layout_marginLeft="20dp"
+            android:layout_marginTop="20dp"
+            android:onClick="add_remarks_drawer"
+        />
+    <ImageView
+        android:layout_width="30dp"
+        android:layout_height="30dp"
+        android:layout_marginLeft="70dp"
+        android:layout_marginTop="22dp"
+        android:src="@drawable/remarks"/>
+</LinearLayout>
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Settings"
+                android:textSize="25dp"
+                android:textColor="#fff"
+                android:layout_marginLeft="20dp"
+                android:layout_marginTop="20dp"
+                android:onClick="open_settings_drawer"
+                />
+            <ImageView
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:layout_marginLeft="130dp"
+                android:layout_marginTop="22dp"
+                android:src="@drawable/settings"/>
+
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Log Out"
+            android:textSize="25dp"
+            android:textColor="#fff"
+            android:layout_marginLeft="20dp"
+            android:layout_marginTop="20dp"
+            android:onClick="open_logintchr"
+            />
+            <ImageView
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:layout_marginLeft="130dp"
+                android:layout_marginTop="22dp"
+                android:src="@drawable/logout_drawer"/>
+        </LinearLayout>
+
+
+
+        //put your navigation view code here
+
+    </LinearLayout>
+
+
+</android.support.v4.widget.DrawerLayout>

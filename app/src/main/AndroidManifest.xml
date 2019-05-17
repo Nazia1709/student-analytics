@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.example.studentanalytics">
+
+    <uses-permission android:name="android.permission.INTERNET" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@drawable/logo"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme2">
+        <activity android:name=".changepassword"></activity>
+        <activity android:name=".help" />
+        <activity android:name=".remarks" />
+        <activity android:name=".appinfo" />
+        <activity android:name=".settingsdrawer" />
+        <activity android:name=".addremarks" />
+        <activity android:name=".MainActivity3" />
+        <activity android:name=".viewstudentlist" />
+        <activity android:name=".marks" />
+        <activity android:name=".recyclerview" />
+        <activity android:name=".logintchr" />
+        <activity android:name=".signuptchr" />
+        <activity android:name=".selectclass" />
+        <activity android:name=".attendancelist" />
+        <activity android:name=".MainActivity" />
+        <activity android:name=".MainActivity2" />
+        <activity android:name=".Results" />
+        <activity android:name=".select" />
+        <activity android:name=".addstudent" />
+        <activity android:name=".resetpassword" />
+        <activity android:name=".profiletchr" />
+        <activity android:name=".addclass" />
+        <activity
+            android:name=".radioattendance"
+            android:theme="@style/AppTheme2" />
+        <activity
+            android:name=".hometchr"
+            android:theme="@style/AppTheme2">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+    </application>
+
+</manifest>
